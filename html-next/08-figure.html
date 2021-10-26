@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        图片标签用于向当前页面引入一个外部图片
+        使用img标签来引入外部图片，img标签是一个自结束标签
+        img这种元素属于替换元素（介于块和行内元素之间，具有两种元素得特点）
+        属性：
+            src属性 指定的是外部图片的路径
+
+            alt属性 图片的描述，这个描述默认情况下不会显示，有些浏览器在图片无法加载时显示
+                搜索引擎会根据alt中的内容来识别图片，如果不写alt属性，则图片不会被搜索引擎所收录
+            
+                width 图片的宽度（单位是像素）
+                height 图片的高度
+
+            注意：
+                宽度和高度中如果只修改了一个，则另一个会等比例缩放
+                一般情况在pc端，不建议修改图片的大小，需要多大的图片就裁剪多大
+                移动端，经常需要对图片进行缩放（大图缩小）
+        
+            图片格式：
+                jpeg(jpg)
+                    支持的颜色比较丰富，不支持透明效果，不支持动图
+                    一般用来显示照片
+                gif 
+                    支持颜色比较少，支持简单透明，支持动图
+                    颜色单一的图片，动图
+                png
+                    支持的颜色丰富，支持复杂透明，不支持动图
+                    颜色丰富，复杂透明图片
+                webp
+                    谷歌推出的专门用来表示网页中的图片的一种格式
+                    具备其他图片格式的所有优点，而且文件大小比较小
+                    兼容性比较差
+                
+                base64
+                    图片使用base64编码，可以将图片转换为字符，通过字符的形式来引入图片
+                    一般用于需要和网页一起加载的图片
+                
+                效果一样的，用大小小的
+                效果不一样，用效果好的
+
+    -->
+
+    <img src="./img/1.png" alt="matplotlib配色">
+    <img src="./img/1.png" width="500" alt="matplotlib配色">
+    <img src="data:image/jpeg;base64,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" alt="白云">
+    <img src="./img/2.png" alt="图片">
+</body>
+</html>
