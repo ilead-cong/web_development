@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       /*
+        将所有的段落字体设置为红色
+
+        元素选择器
+            根据标签名来选中指定的元素
+            标签名{}
+       */
+
+       /*
+       p{
+           color:red;
+       }
+       */
+
+       /*
+        将儿童相见不相识设置为绿色
+
+        id选择器
+            根据元素的id属性选中一个元素
+            #id属性值{}
+       */
+
+       /*
+       #p_green{
+           color:green;
+       }
+       */
+
+       /*
+        将秋水。。和落霞。。设置为蓝色
+
+        类选择器
+            根据元素的class属性值选中一组元素
+            .class属性值
+       */
+       /*
+       .c_blue{
+           color:blue;
+       }
+       .c_fontsize{
+           font-size: 60px;
+       }
+       */
+
+       /*
+        通配选择器
+            选中页面中的所有元素
+            *
+       */
+       /*
+       *{
+           color:yellow;
+       }
+       */
+    </style>
+    <link rel="stylesheet" href="./03-selector.css">
+</head>
+<body>
+    <h1 class="c_blue c_fontsize">我是标题1</h1>
+    <h2>我是标题2</h2>
+    <p>少小离家老大回</p>
+    <p>乡音无改鬓毛衰</p>
+    <p id="p_green">儿童相见不相识</p>
+    <p>笑问客从何处来</p>
+    <!-- 
+        class是一个标签的属性，它和id类似，不同的是class可以重复使用
+            可以通过class属性为元素分组
+            可以同时为一个元素指定多个class，用空格隔开
+     -->
+    <p class="c_blue">秋水共长天一色</p>
+    <p class="c_blue">落霞与孤鹜齐飞</p>
+</body>
+</html>
